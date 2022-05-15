@@ -6,6 +6,10 @@
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
-  <SatelliteDlls />
+  <SatelliteDlls>
+    <SatelliteDll>
+      <FullPath>D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\x64\Debug\ja-JP\Health_lab.resources.dll</FullPath>
+    </SatelliteDll>
+  </SatelliteDlls>
   <NonRecipeFileRefs />
 </Project>

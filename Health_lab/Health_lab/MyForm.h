@@ -93,6 +93,13 @@ namespace Healthlab {
 	public:
 	public:	int ymove = 0;
 		  bool isUser = true;
+	private: System::Windows::Forms::Timer^ minus;
+	private: System::Windows::Forms::Timer^ t0;
+	private: System::Windows::Forms::Timer^ t100;
+	private: System::Windows::Forms::PictureBox^ doctor_img;
+
+	public:
+	private: System::Windows::Forms::Timer^ plus;
 		  
 	public:
 		MyForm(void)
@@ -155,29 +162,30 @@ namespace Healthlab {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->btn2 = (gcnew System::Windows::Forms::Button());
+			this->doctor_img = (gcnew System::Windows::Forms::PictureBox());
 			this->timer10ms_1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->timer10ms_2 = (gcnew System::Windows::Forms::Timer(this->components));
+			this->minus = (gcnew System::Windows::Forms::Timer(this->components));
+			this->plus = (gcnew System::Windows::Forms::Timer(this->components));
+			this->t0 = (gcnew System::Windows::Forms::Timer(this->components));
+			this->t100 = (gcnew System::Windows::Forms::Timer(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Login_img))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Password_img))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->lock_img))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->unlock_img))->BeginInit();
 			this->panel1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->doctor_img))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Exit_1
 			// 
 			this->Exit_1->BackColor = System::Drawing::Color::Transparent;
-			this->Exit_1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Exit_1.BackgroundImage")));
-			this->Exit_1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			resources->ApplyResources(this->Exit_1, L"Exit_1");
 			this->Exit_1->FlatAppearance->BorderSize = 0;
 			this->Exit_1->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
 			this->Exit_1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
-			this->Exit_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Exit_1->Location = System::Drawing::Point(1035, 20);
 			this->Exit_1->Name = L"Exit_1";
-			this->Exit_1->Size = System::Drawing::Size(25, 25);
-			this->Exit_1->TabIndex = 0;
 			this->Exit_1->TabStop = false;
 			this->Exit_1->UseVisualStyleBackColor = false;
 			this->Exit_1->Click += gcnew System::EventHandler(this, &MyForm::EXIT_Click);
@@ -186,16 +194,11 @@ namespace Healthlab {
 			// Exit_2
 			// 
 			this->Exit_2->BackColor = System::Drawing::Color::Transparent;
-			this->Exit_2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Exit_2.BackgroundImage")));
-			this->Exit_2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			resources->ApplyResources(this->Exit_2, L"Exit_2");
 			this->Exit_2->FlatAppearance->BorderSize = 0;
 			this->Exit_2->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
 			this->Exit_2->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
-			this->Exit_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Exit_2->Location = System::Drawing::Point(1035, 20);
 			this->Exit_2->Name = L"Exit_2";
-			this->Exit_2->Size = System::Drawing::Size(25, 25);
-			this->Exit_2->TabIndex = 0;
 			this->Exit_2->TabStop = false;
 			this->Exit_2->UseVisualStyleBackColor = false;
 			this->Exit_2->MouseEnter += gcnew System::EventHandler(this, &MyForm::EXIT_downh_Click);
@@ -203,15 +206,11 @@ namespace Healthlab {
 			// Min_btn
 			// 
 			this->Min_btn->BackColor = System::Drawing::Color::Transparent;
-			this->Min_btn->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Min_btn.BackgroundImage")));
+			resources->ApplyResources(this->Min_btn, L"Min_btn");
 			this->Min_btn->FlatAppearance->BorderSize = 0;
 			this->Min_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
 			this->Min_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
-			this->Min_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Min_btn->Location = System::Drawing::Point(1005, 20);
 			this->Min_btn->Name = L"Min_btn";
-			this->Min_btn->Size = System::Drawing::Size(25, 25);
-			this->Min_btn->TabIndex = 0;
 			this->Min_btn->TabStop = false;
 			this->Min_btn->UseVisualStyleBackColor = false;
 			this->Min_btn->Click += gcnew System::EventHandler(this, &MyForm::Minimaze_Click);
@@ -220,44 +219,30 @@ namespace Healthlab {
 			// Min_btn_o
 			// 
 			this->Min_btn_o->BackColor = System::Drawing::Color::Transparent;
-			this->Min_btn_o->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Min_btn_o.BackgroundImage")));
+			resources->ApplyResources(this->Min_btn_o, L"Min_btn_o");
 			this->Min_btn_o->FlatAppearance->BorderSize = 0;
 			this->Min_btn_o->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
 			this->Min_btn_o->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
-			this->Min_btn_o->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Min_btn_o->Location = System::Drawing::Point(1005, 20);
 			this->Min_btn_o->Name = L"Min_btn_o";
-			this->Min_btn_o->Size = System::Drawing::Size(25, 25);
-			this->Min_btn_o->TabIndex = 0;
 			this->Min_btn_o->TabStop = false;
 			this->Min_btn_o->UseVisualStyleBackColor = false;
 			this->Min_btn_o->MouseEnter += gcnew System::EventHandler(this, &MyForm::Min_downh_Click);
 			// 
 			// label1
 			// 
-			this->label1->AutoSize = true;
+			resources->ApplyResources(this->label1, L"label1");
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Polaris", 7.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label1->Location = System::Drawing::Point(152, 24);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(104, 13);
-			this->label1->TabIndex = 1;
-			this->label1->Text = L"Health  lab";
 			this->label1->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
 			this->label1->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
 			this->label1->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(136, 20);
+			resources->ApplyResources(this->pictureBox1, L"pictureBox1");
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(136, 123);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
 			this->pictureBox1->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
@@ -265,26 +250,19 @@ namespace Healthlab {
 			// 
 			// notifyIcon1
 			// 
-			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"notifyIcon1.Icon")));
-			this->notifyIcon1->Text = L"Health lab";
+			resources->ApplyResources(this->notifyIcon1, L"notifyIcon1");
 			this->notifyIcon1->Click += gcnew System::EventHandler(this, &MyForm::notifyIcon1_Click);
 			// 
 			// Login_img
 			// 
-			this->Login_img->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Login_img.BackgroundImage")));
-			this->Login_img->Location = System::Drawing::Point(3, 219);
+			resources->ApplyResources(this->Login_img, L"Login_img");
 			this->Login_img->Name = L"Login_img";
-			this->Login_img->Size = System::Drawing::Size(399, 65);
-			this->Login_img->TabIndex = 2;
 			this->Login_img->TabStop = false;
 			// 
 			// Password_img
 			// 
-			this->Password_img->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Password_img.BackgroundImage")));
-			this->Password_img->Location = System::Drawing::Point(3, 311);
+			resources->ApplyResources(this->Password_img, L"Password_img");
 			this->Password_img->Name = L"Password_img";
-			this->Password_img->Size = System::Drawing::Size(399, 65);
-			this->Password_img->TabIndex = 2;
 			this->Password_img->TabStop = false;
 			// 
 			// Login_text
@@ -292,106 +270,66 @@ namespace Healthlab {
 			this->Login_text->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
 				static_cast<System::Int32>(static_cast<System::Byte>(191)));
 			this->Login_text->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->Login_text->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
+			resources->ApplyResources(this->Login_text, L"Login_text");
 			this->Login_text->ForeColor = System::Drawing::SystemColors::WindowFrame;
-			this->Login_text->Location = System::Drawing::Point(19, 236);
 			this->Login_text->Name = L"Login_text";
-			this->Login_text->Size = System::Drawing::Size(365, 33);
-			this->Login_text->TabIndex = 0;
 			this->Login_text->TabStop = false;
-			this->Login_text->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// Password_text
 			// 
 			this->Password_text->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
 				static_cast<System::Int32>(static_cast<System::Byte>(191)));
 			this->Password_text->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->Password_text->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
+			resources->ApplyResources(this->Password_text, L"Password_text");
 			this->Password_text->ForeColor = System::Drawing::SystemColors::WindowFrame;
-			this->Password_text->Location = System::Drawing::Point(19, 326);
 			this->Password_text->Name = L"Password_text";
-			this->Password_text->PasswordChar = '*';
-			this->Password_text->Size = System::Drawing::Size(365, 33);
-			this->Password_text->TabIndex = 0;
 			this->Password_text->TabStop = false;
-			this->Password_text->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// lock_img
 			// 
 			this->lock_img->BackColor = System::Drawing::Color::Silver;
-			this->lock_img->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"lock_img.BackgroundImage")));
-			this->lock_img->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->lock_img->Location = System::Drawing::Point(336, 319);
+			resources->ApplyResources(this->lock_img, L"lock_img");
 			this->lock_img->Name = L"lock_img";
-			this->lock_img->Size = System::Drawing::Size(48, 43);
-			this->lock_img->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->lock_img->TabIndex = 4;
 			this->lock_img->TabStop = false;
 			this->lock_img->Click += gcnew System::EventHandler(this, &MyForm::lock_img_Click);
 			// 
 			// unlock_img
 			// 
 			this->unlock_img->BackColor = System::Drawing::Color::Silver;
-			this->unlock_img->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"unlock_img.BackgroundImage")));
-			this->unlock_img->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->unlock_img->Location = System::Drawing::Point(336, 319);
+			resources->ApplyResources(this->unlock_img, L"unlock_img");
 			this->unlock_img->Name = L"unlock_img";
-			this->unlock_img->Size = System::Drawing::Size(48, 43);
-			this->unlock_img->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->unlock_img->TabIndex = 4;
 			this->unlock_img->TabStop = false;
-			this->unlock_img->Visible = false;
 			this->unlock_img->Click += gcnew System::EventHandler(this, &MyForm::unlock_img_Click);
 			// 
 			// label2
 			// 
-			this->label2->AutoSize = true;
+			resources->ApplyResources(this->label2, L"label2");
 			this->label2->BackColor = System::Drawing::Color::Silver;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label2->Location = System::Drawing::Point(25, 229);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(40, 16);
-			this->label2->TabIndex = 5;
-			this->label2->Text = L"Логин";
 			// 
 			// lbl1
 			// 
-			this->lbl1->AutoSize = true;
+			resources->ApplyResources(this->lbl1, L"lbl1");
 			this->lbl1->BackColor = System::Drawing::Color::Transparent;
-			this->lbl1->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
 			this->lbl1->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->lbl1->Location = System::Drawing::Point(166, 179);
 			this->lbl1->Name = L"lbl1";
-			this->lbl1->Size = System::Drawing::Size(78, 35);
-			this->lbl1->TabIndex = 5;
-			this->lbl1->Text = L"Вход";
-			this->lbl1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->lbl1->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
 			this->lbl1->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
 			this->lbl1->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
 			// 
 			// label3
 			// 
-			this->label3->AutoSize = true;
+			resources->ApplyResources(this->label3, L"label3");
 			this->label3->BackColor = System::Drawing::Color::Silver;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label3->Location = System::Drawing::Point(25, 319);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(47, 16);
-			this->label3->TabIndex = 5;
-			this->label3->Text = L"Пароль";
 			// 
 			// panel1
 			// 
-			this->panel1->BackColor = System::Drawing::Color::Transparent;
-			this->panel1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
+				static_cast<System::Int32>(static_cast<System::Byte>(224)));
+			resources->ApplyResources(this->panel1, L"panel1");
 			this->panel1->Controls->Add(this->btn1);
 			this->panel1->Controls->Add(this->label6);
 			this->panel1->Controls->Add(this->label5);
@@ -406,74 +344,61 @@ namespace Healthlab {
 			this->panel1->Controls->Add(this->Password_img);
 			this->panel1->Controls->Add(this->Login_img);
 			this->panel1->Controls->Add(this->btn2);
+			this->panel1->Controls->Add(this->doctor_img);
 			this->panel1->Controls->Add(this->pictureBox1);
-			this->panel1->Location = System::Drawing::Point(360, 12);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(405, 536);
-			this->panel1->TabIndex = 1;
 			this->panel1->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
 			this->panel1->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
 			this->panel1->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
 			// 
 			// btn1
 			// 
-			this->btn1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn1.BackgroundImage")));
-			this->btn1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->btn1->BackColor = System::Drawing::Color::Transparent;
+			resources->ApplyResources(this->btn1, L"btn1");
 			this->btn1->FlatAppearance->BorderSize = 0;
-			this->btn1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->btn1->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 18.25F, System::Drawing::FontStyle::Bold));
+			this->btn1->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
+			this->btn1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
 			this->btn1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(147)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->btn1->Location = System::Drawing::Point(126, 396);
 			this->btn1->Name = L"btn1";
-			this->btn1->Size = System::Drawing::Size(168, 65);
-			this->btn1->TabIndex = 9;
-			this->btn1->Text = L"Войти";
-			this->btn1->UseVisualStyleBackColor = true;
+			this->btn1->UseVisualStyleBackColor = false;
 			this->btn1->MouseEnter += gcnew System::EventHandler(this, &MyForm::btnIn_downh_Click);
 			// 
 			// label6
 			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 8.3F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
+			resources->ApplyResources(this->label6, L"label6");
 			this->label6->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label6->Location = System::Drawing::Point(147, 509);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(132, 18);
-			this->label6->TabIndex = 6;
-			this->label6->Text = L"Войти как сотрудник";
 			this->label6->Click += gcnew System::EventHandler(this, &MyForm::label6_Click);
 			// 
 			// label5
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
+			resources->ApplyResources(this->label5, L"label5");
 			this->label5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(147)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->label5->Location = System::Drawing::Point(300, 379);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(90, 18);
-			this->label5->TabIndex = 6;
-			this->label5->Text = L"Нет аккаунта\?";
 			// 
 			// btn2
 			// 
-			this->btn2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn2.BackgroundImage")));
-			this->btn2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->btn2->BackColor = System::Drawing::Color::Transparent;
+			resources->ApplyResources(this->btn2, L"btn2");
 			this->btn2->FlatAppearance->BorderSize = 0;
-			this->btn2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->btn2->Font = (gcnew System::Drawing::Font(L"Trebuchet MS", 18.25F, System::Drawing::FontStyle::Bold));
+			this->btn2->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
+			this->btn2->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
 			this->btn2->ForeColor = System::Drawing::SystemColors::Control;
-			this->btn2->Location = System::Drawing::Point(126, 396);
 			this->btn2->Name = L"btn2";
-			this->btn2->Size = System::Drawing::Size(168, 65);
-			this->btn2->TabIndex = 9;
-			this->btn2->Text = L"Войти";
-			this->btn2->UseVisualStyleBackColor = true;
+			this->btn2->UseVisualStyleBackColor = false;
 			this->btn2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			this->btn2->MouseLeave += gcnew System::EventHandler(this, &MyForm::btnIn_uph_Click);
+			// 
+			// doctor_img
+			// 
+			resources->ApplyResources(this->doctor_img, L"doctor_img");
+			this->doctor_img->Name = L"doctor_img";
+			this->doctor_img->TabStop = false;
+			this->doctor_img->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
+			this->doctor_img->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
+			this->doctor_img->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
 			// 
 			// timer10ms_1
 			// 
@@ -485,28 +410,43 @@ namespace Healthlab {
 			this->timer10ms_2->Interval = 10;
 			this->timer10ms_2->Tick += gcnew System::EventHandler(this, &MyForm::timer10ms_2_Tick);
 			// 
+			// minus
+			// 
+			this->minus->Interval = 30;
+			this->minus->Tick += gcnew System::EventHandler(this, &MyForm::minus_Tick);
+			// 
+			// plus
+			// 
+			this->plus->Interval = 30;
+			this->plus->Tick += gcnew System::EventHandler(this, &MyForm::plus_Tick);
+			// 
+			// t0
+			// 
+			this->t0->Interval = 10;
+			this->t0->Tick += gcnew System::EventHandler(this, &MyForm::t0_Tick);
+			// 
+			// t100
+			// 
+			this->t100->Interval = 10;
+			this->t100->Tick += gcnew System::EventHandler(this, &MyForm::t100_Tick);
+			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
-			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-			this->ClientSize = System::Drawing::Size(1080, 560);
 			this->ControlBox = false;
-			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->Min_btn_o);
 			this->Controls->Add(this->Min_btn);
 			this->Controls->Add(this->Exit_2);
 			this->Controls->Add(this->Exit_1);
+			this->Controls->Add(this->panel1);
 			this->DoubleBuffered = true;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
 			this->TransparencyKey = System::Drawing::Color::Black;
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
@@ -520,6 +460,7 @@ namespace Healthlab {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->unlock_img))->EndInit();
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->doctor_img))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -563,6 +504,48 @@ namespace Healthlab {
 	private: System::Void timer10ms_1_Tick(System::Object^ sender, System::EventArgs^ e) {
 		MyForm::Opacity += 0.01;
 		if (MyForm::Opacity == 1.0) { timer10ms_1->Enabled = false; }
+		//btn2->Size = System::Drawing::Size(btn2->Size.Width + 1, btn2->Size.Height + 1);
+		//btn2->Refresh();
+	}
+	private: System::Void plus_Tick(System::Object^ sender, System::EventArgs^ e) {
+		if (btn2->Size.Width < 178) {
+			btn2->Size = System::Drawing::Size(btn2->Size.Width + 2, btn2->Size.Height);
+			btn1->Size = System::Drawing::Size(btn1->Size.Width + 2, btn1->Size.Height);
+		}
+		if (btn2->Size.Height < 70) {
+			btn2->Size = System::Drawing::Size(btn2->Size.Width, btn2->Size.Height + 1);
+			btn1->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height + 1);
+		}
+		if (btn2->Location.X > 121) {
+			btn2->Location = Point(btn2->Location.X - 1, btn2->Location.Y);
+			btn1->Location = Point(btn1->Location.X - 1, btn1->Location.Y);
+		}
+		if (btn2->Location.Y > 394) {
+			btn2->Location = Point(btn2->Location.X, btn2->Location.Y - 1);
+			btn1->Location = Point(btn1->Location.X, btn1->Location.Y - 1);
+		}
+	}
+	private: System::Void minus_Tick(System::Object^ sender, System::EventArgs^ e) {
+		if (btn2->Size.Width > 168) {
+			btn2->Size = System::Drawing::Size(btn2->Size.Width - 2, btn2->Size.Height);
+			btn1->Size = System::Drawing::Size(btn1->Size.Width - 2, btn1->Size.Height);
+		}
+		if (btn2->Size.Height > 65) {
+			btn2->Size = System::Drawing::Size(btn2->Size.Width, btn2->Size.Height - 1);
+			btn1->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height - 1);
+		}
+		if (btn2->Location.X < 126) {
+			btn2->Location = Point(btn2->Location.X + 1, btn2->Location.Y);
+			btn1->Location = Point(btn1->Location.X + 1, btn1->Location.Y);
+		}
+		if (btn2->Location.Y < 396) {
+			btn2->Location = Point(btn2->Location.X, btn2->Location.Y + 1);
+			btn1->Location = Point(btn1->Location.X, btn1->Location.Y + 1);
+		}
+		if (btn2->Size.Width == 168 && btn2->Size.Height == 65 && btn2->Location.X == 126 && btn2->Location.Y == 396) { 
+			plus->Enabled = false;
+			minus->Enabled = false; 
+		}
 	}
 	private: System::Void timer10ms_2_Tick(System::Object^ sender, System::EventArgs^ e) {
 		MyForm::Opacity -= 0.01;
@@ -588,9 +571,13 @@ namespace Healthlab {
 	}
 	private: System::Void btnIn_downh_Click(System::Object^ sender, System::EventArgs^ e) {
 		btn1->Visible = false;
+		plus->Enabled = true;
+		minus->Enabled = false;
 	}
 	private: System::Void btnIn_uph_Click(System::Object^ sender, System::EventArgs^ e) {
 		btn1->Visible = true;
+		plus->Enabled = false;
+		minus->Enabled = true;
 	}
 	private: System::Void MyForm_Resize(System::Object^ sender, System::EventArgs^ e) {
 		if (WindowState == FormWindowState::Minimized) {
@@ -616,16 +603,37 @@ namespace Healthlab {
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (t0->Enabled == false && t100->Enabled == false)	t0->Enabled = true;
+	}
+	private: System::Void t0_Tick(System::Object^ sender, System::EventArgs^ e) {
+		MyForm::Opacity -= 0.1;
+		if (MyForm::Opacity == 0) {
+			t0->Enabled = false;
+			t100->Enabled = true;
+			SwichUser();
+		}
+	}
+	private: System::Void t100_Tick(System::Object^ sender, System::EventArgs^ e) {
+		MyForm::Opacity += 0.1;
+		if (MyForm::Opacity == 1.0) {
+			t100->Enabled = false;
+		}
+	}
+	void SwichUser() {
+		Login_text->Text = "";
+		Password_text->Text = "";
 		isUser = !isUser;
 		if (!isUser) {
 			lbl1->Text = "Вход как сотрудника";
 			lbl1->Location = Point(70, 179);
 			label6->Text = "Войти как пациент";
+			doctor_img->Visible = true;
 		}
 		else {
 			lbl1->Text = "Вход";
 			lbl1->Location = Point(166, 179);
 			label6->Text = "Войти как сотрудник";
+			doctor_img->Visible = false;
 		}
 	}
 };
