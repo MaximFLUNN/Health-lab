@@ -20,3 +20,4 @@ Class Healthlab.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Fields:
     Int32 xmove : Public
     Int32 ymove : Public
+    Boolean isUser : Public

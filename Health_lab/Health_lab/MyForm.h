@@ -4,6 +4,7 @@
 ------------------------------------------------------------------------------------------------------ -
 								  | Header form file |
 */
+#include <string>
 #pragma once
 namespace Healthlab {
 
@@ -39,8 +40,10 @@ namespace Healthlab {
 	private: System::Windows::Forms::Label^ lbl1;
 
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Panel^ panel1;
-	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Panel^ pLogin;
+	private: System::Windows::Forms::Label^ lR;
+
+
 	private: System::Windows::Forms::Button^ btn1;
 	private: System::Windows::Forms::Button^ btn2;
 	private: System::Windows::Forms::Label^ label6;
@@ -97,9 +100,57 @@ namespace Healthlab {
 	private: System::Windows::Forms::Timer^ t0;
 	private: System::Windows::Forms::Timer^ t100;
 	private: System::Windows::Forms::PictureBox^ doctor_img;
+	private: System::Windows::Forms::Panel^ pRegister;
+
+
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::TextBox^ tSurname;
+
+
+
+	private: System::Windows::Forms::TextBox^ tName;
+
+	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::PictureBox^ pictureBox6;
+	private: System::Windows::Forms::Label^ label7;
+
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::TextBox^ tPatronymic;
+
+
+
+
+
+
+	private: System::Windows::Forms::PictureBox^ pictureBox10;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label13;
+private: System::Windows::Forms::TextBox^ tPhone;
+
+	private: System::Windows::Forms::PictureBox^ pictureBox15;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label11;
+private: System::Windows::Forms::PictureBox^ pL2;
+
+private: System::Windows::Forms::PictureBox^ pL1;
+
+private: System::Windows::Forms::TextBox^ tPassword;
+
+private: System::Windows::Forms::TextBox^ tLogin;
+
+	private: System::Windows::Forms::PictureBox^ pictureBox12;
+	private: System::Windows::Forms::PictureBox^ pictureBox11;
+private: System::Windows::Forms::Button^ Reg_btn2;
+
+private: System::Windows::Forms::Button^ Reg_btn1;
+private: System::Windows::Forms::Label^ lL;
+
+
 
 	public:
 	private: System::Windows::Forms::Timer^ plus;
+		   bool isChangeUser = false;
 		  
 	public:
 		MyForm(void)
@@ -157,10 +208,10 @@ namespace Healthlab {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->lbl1 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->pLogin = (gcnew System::Windows::Forms::Panel());
 			this->btn1 = (gcnew System::Windows::Forms::Button());
 			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->lR = (gcnew System::Windows::Forms::Label());
 			this->btn2 = (gcnew System::Windows::Forms::Button());
 			this->doctor_img = (gcnew System::Windows::Forms::PictureBox());
 			this->timer10ms_1 = (gcnew System::Windows::Forms::Timer(this->components));
@@ -169,13 +220,49 @@ namespace Healthlab {
 			this->plus = (gcnew System::Windows::Forms::Timer(this->components));
 			this->t0 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->t100 = (gcnew System::Windows::Forms::Timer(this->components));
+			this->pRegister = (gcnew System::Windows::Forms::Panel());
+			this->lL = (gcnew System::Windows::Forms::Label());
+			this->Reg_btn2 = (gcnew System::Windows::Forms::Button());
+			this->Reg_btn1 = (gcnew System::Windows::Forms::Button());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->tPhone = (gcnew System::Windows::Forms::TextBox());
+			this->tPatronymic = (gcnew System::Windows::Forms::TextBox());
+			this->pictureBox15 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->pL2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pL1 = (gcnew System::Windows::Forms::PictureBox());
+			this->tPassword = (gcnew System::Windows::Forms::TextBox());
+			this->tSurname = (gcnew System::Windows::Forms::TextBox());
+			this->tLogin = (gcnew System::Windows::Forms::TextBox());
+			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
+			this->tName = (gcnew System::Windows::Forms::TextBox());
+			this->pictureBox11 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Login_img))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Password_img))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->lock_img))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->unlock_img))->BeginInit();
-			this->panel1->SuspendLayout();
+			this->pLogin->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->doctor_img))->BeginInit();
+			this->pRegister->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pL2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pL1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Exit_1
@@ -325,31 +412,31 @@ namespace Healthlab {
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->label3->Name = L"label3";
 			// 
-			// panel1
+			// pLogin
 			// 
-			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
+			this->pLogin->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			resources->ApplyResources(this->panel1, L"panel1");
-			this->panel1->Controls->Add(this->btn1);
-			this->panel1->Controls->Add(this->label6);
-			this->panel1->Controls->Add(this->label5);
-			this->panel1->Controls->Add(this->label3);
-			this->panel1->Controls->Add(this->lbl1);
-			this->panel1->Controls->Add(this->label2);
-			this->panel1->Controls->Add(this->unlock_img);
-			this->panel1->Controls->Add(this->lock_img);
-			this->panel1->Controls->Add(this->Password_text);
-			this->panel1->Controls->Add(this->label1);
-			this->panel1->Controls->Add(this->Login_text);
-			this->panel1->Controls->Add(this->Password_img);
-			this->panel1->Controls->Add(this->Login_img);
-			this->panel1->Controls->Add(this->btn2);
-			this->panel1->Controls->Add(this->doctor_img);
-			this->panel1->Controls->Add(this->pictureBox1);
-			this->panel1->Name = L"panel1";
-			this->panel1->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
-			this->panel1->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
-			this->panel1->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
+			resources->ApplyResources(this->pLogin, L"pLogin");
+			this->pLogin->Controls->Add(this->btn1);
+			this->pLogin->Controls->Add(this->label6);
+			this->pLogin->Controls->Add(this->lR);
+			this->pLogin->Controls->Add(this->label3);
+			this->pLogin->Controls->Add(this->lbl1);
+			this->pLogin->Controls->Add(this->label2);
+			this->pLogin->Controls->Add(this->unlock_img);
+			this->pLogin->Controls->Add(this->lock_img);
+			this->pLogin->Controls->Add(this->Password_text);
+			this->pLogin->Controls->Add(this->label1);
+			this->pLogin->Controls->Add(this->Login_text);
+			this->pLogin->Controls->Add(this->Password_img);
+			this->pLogin->Controls->Add(this->Login_img);
+			this->pLogin->Controls->Add(this->btn2);
+			this->pLogin->Controls->Add(this->doctor_img);
+			this->pLogin->Controls->Add(this->pictureBox1);
+			this->pLogin->Name = L"pLogin";
+			this->pLogin->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
+			this->pLogin->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
+			this->pLogin->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
 			// 
 			// btn1
 			// 
@@ -371,12 +458,13 @@ namespace Healthlab {
 			this->label6->Name = L"label6";
 			this->label6->Click += gcnew System::EventHandler(this, &MyForm::label6_Click);
 			// 
-			// label5
+			// lR
 			// 
-			resources->ApplyResources(this->label5, L"label5");
-			this->label5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(147)),
+			resources->ApplyResources(this->lR, L"lR");
+			this->lR->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(147)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->label5->Name = L"label5";
+			this->lR->Name = L"lR";
+			this->lR->Click += gcnew System::EventHandler(this, &MyForm::swapPanel);
 			// 
 			// btn2
 			// 
@@ -430,6 +518,246 @@ namespace Healthlab {
 			this->t100->Interval = 10;
 			this->t100->Tick += gcnew System::EventHandler(this, &MyForm::t100_Tick);
 			// 
+			// pRegister
+			// 
+			this->pRegister->Controls->Add(this->lL);
+			this->pRegister->Controls->Add(this->Reg_btn2);
+			this->pRegister->Controls->Add(this->Reg_btn1);
+			this->pRegister->Controls->Add(this->label13);
+			this->pRegister->Controls->Add(this->label10);
+			this->pRegister->Controls->Add(this->tPhone);
+			this->pRegister->Controls->Add(this->tPatronymic);
+			this->pRegister->Controls->Add(this->pictureBox15);
+			this->pRegister->Controls->Add(this->pictureBox10);
+			this->pRegister->Controls->Add(this->label12);
+			this->pRegister->Controls->Add(this->label8);
+			this->pRegister->Controls->Add(this->label11);
+			this->pRegister->Controls->Add(this->label7);
+			this->pRegister->Controls->Add(this->pL2);
+			this->pRegister->Controls->Add(this->pL1);
+			this->pRegister->Controls->Add(this->tPassword);
+			this->pRegister->Controls->Add(this->tSurname);
+			this->pRegister->Controls->Add(this->tLogin);
+			this->pRegister->Controls->Add(this->pictureBox12);
+			this->pRegister->Controls->Add(this->tName);
+			this->pRegister->Controls->Add(this->pictureBox11);
+			this->pRegister->Controls->Add(this->pictureBox5);
+			this->pRegister->Controls->Add(this->pictureBox6);
+			this->pRegister->Controls->Add(this->label4);
+			this->pRegister->Controls->Add(this->pictureBox3);
+			resources->ApplyResources(this->pRegister, L"pRegister");
+			this->pRegister->Name = L"pRegister";
+			this->pRegister->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
+			this->pRegister->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
+			this->pRegister->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
+			// 
+			// lL
+			// 
+			resources->ApplyResources(this->lL, L"lL");
+			this->lL->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(147)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->lL->Name = L"lL";
+			this->lL->Click += gcnew System::EventHandler(this, &MyForm::swapPanel);
+			// 
+			// Reg_btn2
+			// 
+			this->Reg_btn2->BackColor = System::Drawing::Color::Transparent;
+			resources->ApplyResources(this->Reg_btn2, L"Reg_btn2");
+			this->Reg_btn2->FlatAppearance->BorderSize = 0;
+			this->Reg_btn2->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
+			this->Reg_btn2->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
+			this->Reg_btn2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(5)), static_cast<System::Int32>(static_cast<System::Byte>(147)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->Reg_btn2->Name = L"Reg_btn2";
+			this->Reg_btn2->UseVisualStyleBackColor = false;
+			this->Reg_btn2->MouseEnter += gcnew System::EventHandler(this, &MyForm::btnIn_downh_Click);
+			// 
+			// Reg_btn1
+			// 
+			this->Reg_btn1->BackColor = System::Drawing::Color::Transparent;
+			resources->ApplyResources(this->Reg_btn1, L"Reg_btn1");
+			this->Reg_btn1->FlatAppearance->BorderSize = 0;
+			this->Reg_btn1->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Transparent;
+			this->Reg_btn1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Transparent;
+			this->Reg_btn1->ForeColor = System::Drawing::SystemColors::Control;
+			this->Reg_btn1->Name = L"Reg_btn1";
+			this->Reg_btn1->UseVisualStyleBackColor = false;
+			this->Reg_btn1->MouseLeave += gcnew System::EventHandler(this, &MyForm::btnIn_uph_Click);
+			// 
+			// label13
+			// 
+			resources->ApplyResources(this->label13, L"label13");
+			this->label13->BackColor = System::Drawing::Color::Silver;
+			this->label13->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label13->Name = L"label13";
+			// 
+			// label10
+			// 
+			resources->ApplyResources(this->label10, L"label10");
+			this->label10->BackColor = System::Drawing::Color::Silver;
+			this->label10->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label10->Name = L"label10";
+			// 
+			// tPhone
+			// 
+			this->tPhone->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
+				static_cast<System::Int32>(static_cast<System::Byte>(191)));
+			this->tPhone->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			resources->ApplyResources(this->tPhone, L"tPhone");
+			this->tPhone->ForeColor = System::Drawing::SystemColors::WindowFrame;
+			this->tPhone->Name = L"tPhone";
+			this->tPhone->TabStop = false;
+			// 
+			// tPatronymic
+			// 
+			this->tPatronymic->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
+				static_cast<System::Int32>(static_cast<System::Byte>(191)));
+			this->tPatronymic->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			resources->ApplyResources(this->tPatronymic, L"tPatronymic");
+			this->tPatronymic->ForeColor = System::Drawing::SystemColors::WindowFrame;
+			this->tPatronymic->Name = L"tPatronymic";
+			this->tPatronymic->TabStop = false;
+			// 
+			// pictureBox15
+			// 
+			resources->ApplyResources(this->pictureBox15, L"pictureBox15");
+			this->pictureBox15->Name = L"pictureBox15";
+			this->pictureBox15->TabStop = false;
+			// 
+			// pictureBox10
+			// 
+			resources->ApplyResources(this->pictureBox10, L"pictureBox10");
+			this->pictureBox10->Name = L"pictureBox10";
+			this->pictureBox10->TabStop = false;
+			// 
+			// label12
+			// 
+			resources->ApplyResources(this->label12, L"label12");
+			this->label12->BackColor = System::Drawing::Color::Silver;
+			this->label12->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label12->Name = L"label12";
+			// 
+			// label8
+			// 
+			resources->ApplyResources(this->label8, L"label8");
+			this->label8->BackColor = System::Drawing::Color::Silver;
+			this->label8->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label8->Name = L"label8";
+			// 
+			// label11
+			// 
+			resources->ApplyResources(this->label11, L"label11");
+			this->label11->BackColor = System::Drawing::Color::Silver;
+			this->label11->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label11->Name = L"label11";
+			// 
+			// label7
+			// 
+			resources->ApplyResources(this->label7, L"label7");
+			this->label7->BackColor = System::Drawing::Color::Silver;
+			this->label7->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label7->Name = L"label7";
+			// 
+			// pL2
+			// 
+			this->pL2->BackColor = System::Drawing::Color::Silver;
+			resources->ApplyResources(this->pL2, L"pL2");
+			this->pL2->Name = L"pL2";
+			this->pL2->TabStop = false;
+			this->pL2->Click += gcnew System::EventHandler(this, &MyForm::unlock_img_Click);
+			// 
+			// pL1
+			// 
+			this->pL1->BackColor = System::Drawing::Color::Silver;
+			resources->ApplyResources(this->pL1, L"pL1");
+			this->pL1->Name = L"pL1";
+			this->pL1->TabStop = false;
+			this->pL1->Click += gcnew System::EventHandler(this, &MyForm::lock_img_Click);
+			// 
+			// tPassword
+			// 
+			this->tPassword->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
+				static_cast<System::Int32>(static_cast<System::Byte>(191)));
+			this->tPassword->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			resources->ApplyResources(this->tPassword, L"tPassword");
+			this->tPassword->ForeColor = System::Drawing::SystemColors::WindowFrame;
+			this->tPassword->Name = L"tPassword";
+			this->tPassword->TabStop = false;
+			// 
+			// tSurname
+			// 
+			this->tSurname->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
+				static_cast<System::Int32>(static_cast<System::Byte>(191)));
+			this->tSurname->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			resources->ApplyResources(this->tSurname, L"tSurname");
+			this->tSurname->ForeColor = System::Drawing::SystemColors::WindowFrame;
+			this->tSurname->Name = L"tSurname";
+			this->tSurname->TabStop = false;
+			// 
+			// tLogin
+			// 
+			this->tLogin->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
+				static_cast<System::Int32>(static_cast<System::Byte>(191)));
+			this->tLogin->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			resources->ApplyResources(this->tLogin, L"tLogin");
+			this->tLogin->ForeColor = System::Drawing::SystemColors::WindowFrame;
+			this->tLogin->Name = L"tLogin";
+			this->tLogin->TabStop = false;
+			// 
+			// pictureBox12
+			// 
+			resources->ApplyResources(this->pictureBox12, L"pictureBox12");
+			this->pictureBox12->Name = L"pictureBox12";
+			this->pictureBox12->TabStop = false;
+			// 
+			// tName
+			// 
+			this->tName->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(191)), static_cast<System::Int32>(static_cast<System::Byte>(191)),
+				static_cast<System::Int32>(static_cast<System::Byte>(191)));
+			this->tName->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			resources->ApplyResources(this->tName, L"tName");
+			this->tName->ForeColor = System::Drawing::SystemColors::WindowFrame;
+			this->tName->Name = L"tName";
+			this->tName->TabStop = false;
+			// 
+			// pictureBox11
+			// 
+			resources->ApplyResources(this->pictureBox11, L"pictureBox11");
+			this->pictureBox11->Name = L"pictureBox11";
+			this->pictureBox11->TabStop = false;
+			// 
+			// pictureBox5
+			// 
+			resources->ApplyResources(this->pictureBox5, L"pictureBox5");
+			this->pictureBox5->Name = L"pictureBox5";
+			this->pictureBox5->TabStop = false;
+			// 
+			// pictureBox6
+			// 
+			resources->ApplyResources(this->pictureBox6, L"pictureBox6");
+			this->pictureBox6->Name = L"pictureBox6";
+			this->pictureBox6->TabStop = false;
+			// 
+			// label4
+			// 
+			resources->ApplyResources(this->label4, L"label4");
+			this->label4->BackColor = System::Drawing::Color::Transparent;
+			this->label4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->label4->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label4->Name = L"label4";
+			this->label4->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
+			this->label4->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
+			this->label4->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
+			// 
+			// pictureBox3
+			// 
+			resources->ApplyResources(this->pictureBox3, L"pictureBox3");
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->TabStop = false;
+			this->pictureBox3->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
+			this->pictureBox3->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
+			this->pictureBox3->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
+			// 
 			// MyForm
 			// 
 			resources->ApplyResources(this, L"$this");
@@ -441,7 +769,8 @@ namespace Healthlab {
 			this->Controls->Add(this->Min_btn);
 			this->Controls->Add(this->Exit_2);
 			this->Controls->Add(this->Exit_1);
-			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->pRegister);
+			this->Controls->Add(this->pLogin);
 			this->DoubleBuffered = true;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->MaximizeBox = false;
@@ -458,9 +787,20 @@ namespace Healthlab {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Password_img))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->lock_img))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->unlock_img))->EndInit();
-			this->panel1->ResumeLayout(false);
-			this->panel1->PerformLayout();
+			this->pLogin->ResumeLayout(false);
+			this->pLogin->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->doctor_img))->EndInit();
+			this->pRegister->ResumeLayout(false);
+			this->pRegister->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pL2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pL1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -524,6 +864,23 @@ namespace Healthlab {
 			btn2->Location = Point(btn2->Location.X, btn2->Location.Y - 1);
 			btn1->Location = Point(btn1->Location.X, btn1->Location.Y - 1);
 		}
+		///////////////////////////////////////reg
+		if (Reg_btn1->Size.Width < 178) {
+			Reg_btn1->Size = System::Drawing::Size(btn1->Size.Width + 2, btn1->Size.Height);
+			Reg_btn2->Size = System::Drawing::Size(btn1->Size.Width + 2, btn1->Size.Height);
+		}
+		if (Reg_btn1->Size.Height < 70) {
+			Reg_btn1->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height + 1);
+			Reg_btn2->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height + 1);
+		}
+		if (Reg_btn1->Location.X > 454) {
+			Reg_btn1->Location = Point(Reg_btn1->Location.X - 1, Reg_btn1->Location.Y);
+			Reg_btn2->Location = Point(Reg_btn2->Location.X - 1, Reg_btn2->Location.Y);
+		}
+		if (Reg_btn1->Location.Y > 390) {
+			Reg_btn1->Location = Point(Reg_btn1->Location.X, Reg_btn1->Location.Y - 1);
+			Reg_btn2->Location = Point(Reg_btn2->Location.X, Reg_btn2->Location.Y - 1);
+		}
 	}
 	private: System::Void minus_Tick(System::Object^ sender, System::EventArgs^ e) {
 		if (btn2->Size.Width > 168) {
@@ -542,10 +899,28 @@ namespace Healthlab {
 			btn2->Location = Point(btn2->Location.X, btn2->Location.Y + 1);
 			btn1->Location = Point(btn1->Location.X, btn1->Location.Y + 1);
 		}
-		if (btn2->Size.Width == 168 && btn2->Size.Height == 65 && btn2->Location.X == 126 && btn2->Location.Y == 396) { 
-			plus->Enabled = false;
-			minus->Enabled = false; 
+		////////////////////////////////////reg
+		if (Reg_btn1->Size.Width > 168) {
+			Reg_btn1->Size = System::Drawing::Size(btn1->Size.Width - 2, btn1->Size.Height);
+			Reg_btn2->Size = System::Drawing::Size(btn1->Size.Width - 2, btn1->Size.Height);
 		}
+		if (Reg_btn1->Size.Height > 65) {
+			Reg_btn1->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height - 1);
+			Reg_btn2->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height - 1);
+		}
+		if (Reg_btn1->Location.X < 459) {
+			Reg_btn1->Location = Point(Reg_btn1->Location.X + 1, Reg_btn1->Location.Y);
+			Reg_btn2->Location = Point(Reg_btn2->Location.X + 1, Reg_btn2->Location.Y);
+		}
+		if (Reg_btn1->Location.Y < 392) {
+			Reg_btn1->Location = Point(Reg_btn1->Location.X, Reg_btn1->Location.Y + 1);
+			Reg_btn2->Location = Point(Reg_btn2->Location.X, Reg_btn2->Location.Y + 1);
+		}
+		///
+		//if (btn2->Size.Width == 168 && btn2->Size.Height == 65 && btn2->Location.X == 126 && btn2->Location.Y == 396) { 
+		//	plus->Enabled = false;
+		//	minus->Enabled = false; 
+		//}
 	}
 	private: System::Void timer10ms_2_Tick(System::Object^ sender, System::EventArgs^ e) {
 		MyForm::Opacity -= 0.01;
@@ -571,11 +946,13 @@ namespace Healthlab {
 	}
 	private: System::Void btnIn_downh_Click(System::Object^ sender, System::EventArgs^ e) {
 		btn1->Visible = false;
+		Reg_btn2->Visible = false;
 		plus->Enabled = true;
 		minus->Enabled = false;
 	}
 	private: System::Void btnIn_uph_Click(System::Object^ sender, System::EventArgs^ e) {
 		btn1->Visible = true;
+		Reg_btn2->Visible = true;
 		plus->Enabled = false;
 		minus->Enabled = true;
 	}
@@ -591,26 +968,59 @@ namespace Healthlab {
 		this->WindowState = FormWindowState::Normal;
 	}
 	private: System::Void unlock_img_Click(System::Object^ sender, System::EventArgs^ e) {
-		Password_text->PasswordChar = '*';
-		unlock_img->Visible = false;
-		lock_img->Visible = true;
+		if (((PictureBox^)sender)->Name == "unlock_img") {
+			Password_text->PasswordChar = '*';
+			unlock_img->Visible = false;
+			lock_img->Visible = true;
+		}
+		else if (((PictureBox^)sender)->Name == "pL2") {
+			tPassword->PasswordChar = '*';
+			pL2->Visible = false;
+			pL1->Visible = true;
+		}
 	}
 	private: System::Void lock_img_Click(System::Object^ sender, System::EventArgs^ e) {
-		Password_text->PasswordChar = false;
-		lock_img->Visible = false;
-		unlock_img->Visible = true;
+		if (((PictureBox^)sender)->Name == "lock_img") {
+			Password_text->PasswordChar = false;
+			lock_img->Visible = false;
+			unlock_img->Visible = true;
+		}
+		else if (((PictureBox^)sender)->Name == "pL1") {
+			tPassword->PasswordChar = false;
+			pL1->Visible = false;
+			pL2->Visible = true;
+		}	
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (t0->Enabled == false && t100->Enabled == false)	t0->Enabled = true;
+		isChangeUser = true;
 	}
 	private: System::Void t0_Tick(System::Object^ sender, System::EventArgs^ e) {
 		MyForm::Opacity -= 0.1;
 		if (MyForm::Opacity == 0) {
 			t0->Enabled = false;
 			t100->Enabled = true;
-			SwichUser();
+			if (isChangeUser) SwichUser();
+			else {
+				if (pLogin->Visible == true && pRegister->Visible == false) {
+					pLogin->Visible = false;
+					pRegister->Visible = true;
+					tName->Text = "";
+					tSurname->Text = "";
+					tPatronymic->Text = "";
+					tLogin->Text = "";
+					tPassword->Text = "";
+					tPhone->Text = "";
+				}
+				else {
+					pLogin->Visible = true;
+					pRegister->Visible = false;
+					Login_text->Text = "";
+					Password_text->Text = "";
+				}
+			}
 		}
 	}
 	private: System::Void t100_Tick(System::Object^ sender, System::EventArgs^ e) {
@@ -635,6 +1045,22 @@ namespace Healthlab {
 			label6->Text = "Войти как сотрудник";
 			doctor_img->Visible = false;
 		}
+		isChangeUser = false;
+	}
+	private: System::Void swapPanel(System::Object^ sender, System::EventArgs^ e) {
+		if (t0->Enabled == false && t100->Enabled == false)	t0->Enabled = true;
+	}
+	/// <summary>
+	/// Перевод из System::String^ в std::string
+	/// </summary>
+	/// <param name="s">- Что нужно перевести</param>
+	/// <param name="os">- Куда нужно перевести</param>
+	/// <returns></returns>
+	std::string StringConverter(String^ s, std::string os) {
+		const char* chars = (const char*)(Runtime::InteropServices::Marshal::StringToHGlobalAnsi(s)).ToPointer();
+		os = chars;
+		Runtime::InteropServices::Marshal::FreeHGlobal(IntPtr((void*)chars));
+		return os;
 	}
 };
 }
