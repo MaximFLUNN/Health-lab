@@ -5,6 +5,8 @@
 								  | Header form file |
 */
 #include <string>
+#include "baseEngine.h"
+
 #pragma once
 namespace Healthlab {
 
@@ -19,6 +21,13 @@ namespace Healthlab {
 	/// <summary>
 	/// Сводка для MyForm
 	/// </summary>
+	const char warningSymbols[32] = {
+		'_', '-', '"', '\'', '=',
+		'+', ')', '(', '*', '&',
+		'%', '$', '#', '№', '@',
+		'\\', '/', ';', ':', '`',
+		'~', '?', '!', ',', '.',
+		'[', ']', '{', '}', '^', ' ', '\0'};
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:	int xmove = 0;
@@ -151,6 +160,24 @@ private: System::Windows::Forms::Label^ lL;
 	public:
 	private: System::Windows::Forms::Timer^ plus;
 		   bool isChangeUser = false;
+private: System::Windows::Forms::Label^ warningAll;
+private: System::Windows::Forms::Label^ warningPhone;
+private: System::Windows::Forms::Label^ warningPassword;
+private: System::Windows::Forms::Label^ warningPatronymic;
+private: System::Windows::Forms::Label^ warningLogin;
+private: System::Windows::Forms::Label^ warningSurname;
+private: System::Windows::Forms::Label^ warningName;
+private: System::Windows::Forms::Label^ pwarningAllPart1;
+
+private: System::Windows::Forms::Label^ pwarningPassword;
+
+
+private: System::Windows::Forms::Label^ pwarningLogin;
+private: System::Windows::Forms::Label^ pwarningAllPart2;
+
+
+	   BASE* startDataBase = new BASE();
+       
 		  
 	public:
 		MyForm(void)
@@ -209,6 +236,10 @@ private: System::Windows::Forms::Label^ lL;
 			this->lbl1 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->pLogin = (gcnew System::Windows::Forms::Panel());
+			this->pwarningAllPart2 = (gcnew System::Windows::Forms::Label());
+			this->pwarningAllPart1 = (gcnew System::Windows::Forms::Label());
+			this->pwarningPassword = (gcnew System::Windows::Forms::Label());
+			this->pwarningLogin = (gcnew System::Windows::Forms::Label());
 			this->btn1 = (gcnew System::Windows::Forms::Button());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->lR = (gcnew System::Windows::Forms::Label());
@@ -233,6 +264,13 @@ private: System::Windows::Forms::Label^ lL;
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->warningAll = (gcnew System::Windows::Forms::Label());
+			this->warningPhone = (gcnew System::Windows::Forms::Label());
+			this->warningPassword = (gcnew System::Windows::Forms::Label());
+			this->warningPatronymic = (gcnew System::Windows::Forms::Label());
+			this->warningLogin = (gcnew System::Windows::Forms::Label());
+			this->warningSurname = (gcnew System::Windows::Forms::Label());
+			this->warningName = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->pL2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pL1 = (gcnew System::Windows::Forms::PictureBox());
@@ -417,6 +455,10 @@ private: System::Windows::Forms::Label^ lL;
 			this->pLogin->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
 				static_cast<System::Int32>(static_cast<System::Byte>(224)));
 			resources->ApplyResources(this->pLogin, L"pLogin");
+			this->pLogin->Controls->Add(this->pwarningAllPart2);
+			this->pLogin->Controls->Add(this->pwarningAllPart1);
+			this->pLogin->Controls->Add(this->pwarningPassword);
+			this->pLogin->Controls->Add(this->pwarningLogin);
 			this->pLogin->Controls->Add(this->btn1);
 			this->pLogin->Controls->Add(this->label6);
 			this->pLogin->Controls->Add(this->lR);
@@ -437,6 +479,34 @@ private: System::Windows::Forms::Label^ lL;
 			this->pLogin->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent65);
 			this->pLogin->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_MouseMove1);
 			this->pLogin->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::MyForm_Transperent100);
+			// 
+			// pwarningAllPart2
+			// 
+			resources->ApplyResources(this->pwarningAllPart2, L"pwarningAllPart2");
+			this->pwarningAllPart2->BackColor = System::Drawing::Color::Transparent;
+			this->pwarningAllPart2->ForeColor = System::Drawing::Color::Red;
+			this->pwarningAllPart2->Name = L"pwarningAllPart2";
+			// 
+			// pwarningAllPart1
+			// 
+			resources->ApplyResources(this->pwarningAllPart1, L"pwarningAllPart1");
+			this->pwarningAllPart1->BackColor = System::Drawing::Color::Transparent;
+			this->pwarningAllPart1->ForeColor = System::Drawing::Color::Red;
+			this->pwarningAllPart1->Name = L"pwarningAllPart1";
+			// 
+			// pwarningPassword
+			// 
+			resources->ApplyResources(this->pwarningPassword, L"pwarningPassword");
+			this->pwarningPassword->BackColor = System::Drawing::Color::Transparent;
+			this->pwarningPassword->ForeColor = System::Drawing::Color::Red;
+			this->pwarningPassword->Name = L"pwarningPassword";
+			// 
+			// pwarningLogin
+			// 
+			resources->ApplyResources(this->pwarningLogin, L"pwarningLogin");
+			this->pwarningLogin->BackColor = System::Drawing::Color::Transparent;
+			this->pwarningLogin->ForeColor = System::Drawing::Color::Red;
+			this->pwarningLogin->Name = L"pwarningLogin";
 			// 
 			// btn1
 			// 
@@ -476,7 +546,7 @@ private: System::Windows::Forms::Label^ lL;
 			this->btn2->ForeColor = System::Drawing::SystemColors::Control;
 			this->btn2->Name = L"btn2";
 			this->btn2->UseVisualStyleBackColor = false;
-			this->btn2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			this->btn2->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			this->btn2->MouseLeave += gcnew System::EventHandler(this, &MyForm::btnIn_uph_Click);
 			// 
 			// doctor_img
@@ -532,6 +602,13 @@ private: System::Windows::Forms::Label^ lL;
 			this->pRegister->Controls->Add(this->label12);
 			this->pRegister->Controls->Add(this->label8);
 			this->pRegister->Controls->Add(this->label11);
+			this->pRegister->Controls->Add(this->warningAll);
+			this->pRegister->Controls->Add(this->warningPhone);
+			this->pRegister->Controls->Add(this->warningPassword);
+			this->pRegister->Controls->Add(this->warningPatronymic);
+			this->pRegister->Controls->Add(this->warningLogin);
+			this->pRegister->Controls->Add(this->warningSurname);
+			this->pRegister->Controls->Add(this->warningName);
 			this->pRegister->Controls->Add(this->label7);
 			this->pRegister->Controls->Add(this->pL2);
 			this->pRegister->Controls->Add(this->pL1);
@@ -582,6 +659,7 @@ private: System::Windows::Forms::Label^ lL;
 			this->Reg_btn1->ForeColor = System::Drawing::SystemColors::Control;
 			this->Reg_btn1->Name = L"Reg_btn1";
 			this->Reg_btn1->UseVisualStyleBackColor = false;
+			this->Reg_btn1->Click += gcnew System::EventHandler(this, &MyForm::Reg_btn1_Click);
 			this->Reg_btn1->MouseLeave += gcnew System::EventHandler(this, &MyForm::btnIn_uph_Click);
 			// 
 			// label13
@@ -650,6 +728,55 @@ private: System::Windows::Forms::Label^ lL;
 			this->label11->BackColor = System::Drawing::Color::Silver;
 			this->label11->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->label11->Name = L"label11";
+			// 
+			// warningAll
+			// 
+			resources->ApplyResources(this->warningAll, L"warningAll");
+			this->warningAll->BackColor = System::Drawing::Color::Transparent;
+			this->warningAll->ForeColor = System::Drawing::Color::Red;
+			this->warningAll->Name = L"warningAll";
+			// 
+			// warningPhone
+			// 
+			resources->ApplyResources(this->warningPhone, L"warningPhone");
+			this->warningPhone->BackColor = System::Drawing::Color::Transparent;
+			this->warningPhone->ForeColor = System::Drawing::Color::Red;
+			this->warningPhone->Name = L"warningPhone";
+			// 
+			// warningPassword
+			// 
+			resources->ApplyResources(this->warningPassword, L"warningPassword");
+			this->warningPassword->BackColor = System::Drawing::Color::Transparent;
+			this->warningPassword->ForeColor = System::Drawing::Color::Red;
+			this->warningPassword->Name = L"warningPassword";
+			// 
+			// warningPatronymic
+			// 
+			resources->ApplyResources(this->warningPatronymic, L"warningPatronymic");
+			this->warningPatronymic->BackColor = System::Drawing::Color::Transparent;
+			this->warningPatronymic->ForeColor = System::Drawing::Color::Red;
+			this->warningPatronymic->Name = L"warningPatronymic";
+			// 
+			// warningLogin
+			// 
+			resources->ApplyResources(this->warningLogin, L"warningLogin");
+			this->warningLogin->BackColor = System::Drawing::Color::Transparent;
+			this->warningLogin->ForeColor = System::Drawing::Color::Red;
+			this->warningLogin->Name = L"warningLogin";
+			// 
+			// warningSurname
+			// 
+			resources->ApplyResources(this->warningSurname, L"warningSurname");
+			this->warningSurname->BackColor = System::Drawing::Color::Transparent;
+			this->warningSurname->ForeColor = System::Drawing::Color::Red;
+			this->warningSurname->Name = L"warningSurname";
+			// 
+			// warningName
+			// 
+			resources->ApplyResources(this->warningName, L"warningName");
+			this->warningName->BackColor = System::Drawing::Color::Transparent;
+			this->warningName->ForeColor = System::Drawing::Color::Red;
+			this->warningName->Name = L"warningName";
 			// 
 			// label7
 			// 
@@ -769,8 +896,8 @@ private: System::Windows::Forms::Label^ lL;
 			this->Controls->Add(this->Min_btn);
 			this->Controls->Add(this->Exit_2);
 			this->Controls->Add(this->Exit_1);
-			this->Controls->Add(this->pRegister);
 			this->Controls->Add(this->pLogin);
+			this->Controls->Add(this->pRegister);
 			this->DoubleBuffered = true;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->MaximizeBox = false;
@@ -811,13 +938,7 @@ private: System::Windows::Forms::Label^ lL;
 		notifyIcon1->Visible = false;
 		MyForm::Opacity = 0.0;
 		timer10ms_1->Enabled = true;
-		//System::Threading::Thread::Sleep(1000);
-		//if (Task::Delay(5000)) {
-		//MyForm::Opacity = 1.0;
-		//}
-		//await Task::Delay(10);
-		//}
-		
+		startDataBase->readFile();
 	}
 	private: System::Void MyForm_MouseMove1(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
 		if (e->Button != System::Windows::Forms::MouseButtons::Left)
@@ -873,7 +994,7 @@ private: System::Windows::Forms::Label^ lL;
 			Reg_btn1->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height + 1);
 			Reg_btn2->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height + 1);
 		}
-		if (Reg_btn1->Location.X > 454) {
+		if (Reg_btn1->Location.X > 448) {
 			Reg_btn1->Location = Point(Reg_btn1->Location.X - 1, Reg_btn1->Location.Y);
 			Reg_btn2->Location = Point(Reg_btn2->Location.X - 1, Reg_btn2->Location.Y);
 		}
@@ -908,7 +1029,7 @@ private: System::Windows::Forms::Label^ lL;
 			Reg_btn1->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height - 1);
 			Reg_btn2->Size = System::Drawing::Size(btn1->Size.Width, btn1->Size.Height - 1);
 		}
-		if (Reg_btn1->Location.X < 459) {
+		if (Reg_btn1->Location.X < 453) {
 			Reg_btn1->Location = Point(Reg_btn1->Location.X + 1, Reg_btn1->Location.Y);
 			Reg_btn2->Location = Point(Reg_btn2->Location.X + 1, Reg_btn2->Location.Y);
 		}
@@ -1030,6 +1151,7 @@ private: System::Windows::Forms::Label^ lL;
 		}
 	}
 	void SwichUser() {
+		clearWarningsLogin();
 		Login_text->Text = "";
 		Password_text->Text = "";
 		isUser = !isUser;
@@ -1038,17 +1160,39 @@ private: System::Windows::Forms::Label^ lL;
 			lbl1->Location = Point(70, 179);
 			label6->Text = "Войти как пациент";
 			doctor_img->Visible = true;
+			lR->Visible = false;
 		}
 		else {
 			lbl1->Text = "Вход";
 			lbl1->Location = Point(166, 179);
 			label6->Text = "Войти как сотрудник";
 			doctor_img->Visible = false;
+			lR->Visible = true;
 		}
 		isChangeUser = false;
 	}
 	private: System::Void swapPanel(System::Object^ sender, System::EventArgs^ e) {
 		if (t0->Enabled == false && t100->Enabled == false)	t0->Enabled = true;
+		clearWarningsALL();
+	}
+	void clearWarningsLogin() {
+		pwarningLogin->Visible = false;
+		pwarningPassword->Visible = false;
+		pwarningAllPart1->Visible = false;
+		pwarningAllPart2->Visible = false;
+	}
+	void clearWarningsALL() {
+		pwarningLogin->Visible = false;
+		pwarningPassword->Visible = false;
+		pwarningAllPart1->Visible = false;
+		pwarningAllPart2->Visible = false;
+		warningName->Visible = false;
+		warningSurname->Visible = false;
+		warningPatronymic->Visible = false;
+		warningLogin->Visible = false;
+		warningPassword->Visible = false;
+		warningPhone->Visible = false;
+		warningAll->Visible = false;
 	}
 	/// <summary>
 	/// Перевод из System::String^ в std::string
@@ -1056,11 +1200,85 @@ private: System::Windows::Forms::Label^ lL;
 	/// <param name="s">- Что нужно перевести</param>
 	/// <param name="os">- Куда нужно перевести</param>
 	/// <returns></returns>
-	std::string StringConverter(String^ s, std::string os) {
+	std::string StringConverter(String^ s) {
 		const char* chars = (const char*)(Runtime::InteropServices::Marshal::StringToHGlobalAnsi(s)).ToPointer();
-		os = chars;
+		std::string os = chars;
 		Runtime::InteropServices::Marshal::FreeHGlobal(IntPtr((void*)chars));
 		return os;
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (checkCorrectLogin()) {
+			if (startDataBase->sendMessageLogin(
+				StringConverter(Login_text->Text),
+				StringConverter(Password_text->Text), isUser)) {
+				MessageBox::Show("   Вы успешно авторизованы!   ");
+			}
+			else {
+				MessageBox::Show("   Пользователь не найден!   ");
+			}
+		}
+	}
+	private: System::Void Reg_btn1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (checkCorrectRegister()) {
+			if (startDataBase->sendMessageRegister(
+				StringConverter(tName->Text),
+				StringConverter(tSurname->Text),
+				StringConverter(tPatronymic->Text),
+				StringConverter(tLogin->Text),
+				StringConverter(tPassword->Text),
+				StringConverter(tPhone->Text))) {
+				MessageBox::Show("   Пользователь успешно зарегистрирован!   ");
+			}
+			else {
+				MessageBox::Show("   Такой логин уже занят!   ");
+			}
+		}
+	}
+	bool checkCorrectLogin() {
+		bool correct = true;
+		if (!checkCorrectDataInLine(Login_text->Text, pwarningLogin)) { correct = false; }
+		if (!checkCorrectDataInLine(Password_text->Text, pwarningPassword)) { correct = false; }
+		if (correct) {
+			pwarningAllPart1->Visible = false;
+			pwarningAllPart2->Visible = false;
+			return true;
+		}
+		pwarningAllPart1->Visible = true;
+		pwarningAllPart2->Visible = true;
+		return false;
+	}
+	bool checkCorrectRegister() {
+		bool correct = true;
+		if (!checkCorrectDataInLine(tName->Text, warningName)) { correct = false; }
+		if (!checkCorrectDataInLine(tSurname->Text, warningSurname)) { correct = false; }
+		if (!checkCorrectDataInLine(tPatronymic->Text, warningPatronymic)) { correct = false; }
+		if (!checkCorrectDataInLine(tLogin->Text, warningLogin)) { correct = false; }
+		if (!checkCorrectDataInLine(tPassword->Text, warningPassword)) { correct = false; }
+		if (!checkCorrectDataInLine(tPhone->Text, warningPhone)) { correct = false; }
+		if (correct) {
+			warningAll->Visible = false;
+			return true;
+		}
+		else {
+			warningAll->Visible = true;
+			return false;
+		}
+	}
+	bool checkCorrectDataInLine(String^ line, Label^ warning) {
+		if (line->Length == 0) { 
+			warning->Visible = true;
+			return false; 
+		}
+		for (int i = 0; i < line->Length; i++) {
+			for (int j = 0; j < 32; j++) {
+				if (line[i] == warningSymbols[j]) {
+					warning->Visible = true;
+					return false;
+				}
+			}
+		}
+		warning->Visible = false;
+		return true;
 	}
 };
 }

@@ -3,3 +3,8 @@ D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\
 D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\x64\Debug\Healthlab.MyForm.resources
 D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\x64\Debug\Health_lab.vcxproj.GenerateResource.cache
 D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\x64\Debug\Healthlab.MyForm.ja-JP.resources
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\x64\Debug\Health_lab.vcxproj.AssemblyReference.cache
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\x64\Debug\Health_lab.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\x64\Debug\Healthlab.MyForm.resources
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\x64\Debug\Healthlab.MyForm.ja-JP.resources
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\x64\Debug\Health_lab.vcxproj.GenerateResource.cache

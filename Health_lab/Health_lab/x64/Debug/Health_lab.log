@@ -1,4 +1,5 @@
 ﻿  MyForm.cpp
-D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\MyForm.cpp(7,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\baseEngine.h(70,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\MyForm.cpp(7,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Health_lab.vcxproj -> D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\x64\Debug\Health_lab.exe
+  Health_lab.vcxproj -> C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\x64\Debug\Health_lab.exe

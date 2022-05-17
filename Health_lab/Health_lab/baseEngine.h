@@ -20,9 +20,9 @@ class USER;
 
 
 class BASE {
+ public:
 	std::vector<USER> users;
-	
-
+ 
 	void readFile() {
 		std::string line;
 		std::fstream ifile("base.txt", std::ios_base::in);
@@ -67,12 +67,13 @@ class BASE {
 	}
 
 	bool sendMessageLogin(std::string login, std::string password, bool isUser) {
-		for (int i = 0; i < users.size(); i++) {
+		int vectorUserSize = users.size();
+		for (int i = 0; i < vectorUserSize; i++) {
 			if (login == users[i].login && password == users[i].password) {
 				return true;
 			}
-			return false;
 		}
+		return false;
 	}
 
 	bool sendMessageRegister(std::string name, std::string surname, std::string patronymic, std::string login, std::string password, std::string phone) {

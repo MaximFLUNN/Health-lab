@@ -310,7 +310,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -413,7 +413,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1598,7 +1598,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;Login_img.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="Password_img.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1645,7 +1645,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;Password_img.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="Login_text.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
@@ -1672,7 +1672,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;Login_text.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="Password_text.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
@@ -1702,7 +1702,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;Password_text.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="lock_img.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1862,7 +1862,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;lock_img.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="unlock_img.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2027,7 +2027,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;unlock_img.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2057,7 +2057,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="lbl1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2090,7 +2090,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;lbl1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2120,10 +2120,58 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="pLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.Name" xml:space="preserve">
+    <value>pwarningAllPart2</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.Name" xml:space="preserve">
+    <value>pwarningAllPart1</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.Name" xml:space="preserve">
+    <value>pwarningPassword</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.Name" xml:space="preserve">
+    <value>pwarningLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn1.Name" xml:space="preserve">
     <value>btn1</value>
@@ -2135,7 +2183,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -2147,7 +2195,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;lR.Name" xml:space="preserve">
     <value>lR</value>
@@ -2159,7 +2207,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;lR.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btn2.Name" xml:space="preserve">
     <value>btn2</value>
@@ -2171,7 +2219,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;btn2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;doctor_img.Name" xml:space="preserve">
     <value>doctor_img</value>
@@ -2183,7 +2231,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;doctor_img.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="pLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>360, 15</value>
@@ -2204,7 +2252,151 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pLogin.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
+  </data>
+  <data name="pwarningAllPart2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pwarningAllPart2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pwarningAllPart2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pwarningAllPart2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 480</value>
+  </data>
+  <data name="pwarningAllPart2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 16</value>
+  </data>
+  <data name="pwarningAllPart2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="pwarningAllPart2.Text" xml:space="preserve">
+    <value>("_ - = + ) ( &amp; * ^ % $ # @ ' " ; : № , . ? ! \ | / ` ~")</value>
+  </data>
+  <data name="pwarningAllPart2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.Name" xml:space="preserve">
+    <value>pwarningAllPart2</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pwarningAllPart1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pwarningAllPart1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pwarningAllPart1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pwarningAllPart1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 464</value>
+  </data>
+  <data name="pwarningAllPart1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 16</value>
+  </data>
+  <data name="pwarningAllPart1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="pwarningAllPart1.Text" xml:space="preserve">
+    <value>Поля не должны содержать пробелов и знаков </value>
+  </data>
+  <data name="pwarningAllPart1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.Name" xml:space="preserve">
+    <value>pwarningAllPart1</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningAllPart1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pwarningPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pwarningPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pwarningPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pwarningPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 378</value>
+  </data>
+  <data name="pwarningPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 16</value>
+  </data>
+  <data name="pwarningPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="pwarningPassword.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле</value>
+  </data>
+  <data name="pwarningPassword.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.Name" xml:space="preserve">
+    <value>pwarningPassword</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningPassword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pwarningLogin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pwarningLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pwarningLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pwarningLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 287</value>
+  </data>
+  <data name="pwarningLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 16</value>
+  </data>
+  <data name="pwarningLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="pwarningLogin.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле</value>
+  </data>
+  <data name="pwarningLogin.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.Name" xml:space="preserve">
+    <value>pwarningLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.Parent" xml:space="preserve">
+    <value>pLogin</value>
+  </data>
+  <data name="&gt;&gt;pwarningLogin.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="btn1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2266,7 +2458,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2296,7 +2488,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="lR.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2326,7 +2518,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;lR.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="btn2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2381,7 +2573,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;btn2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="doctor_img.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2954,7 +3146,7 @@
     <value>pLogin</value>
   </data>
   <data name="&gt;&gt;doctor_img.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <metadata name="timer10ms_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>130, 17</value>
@@ -2974,6 +3166,414 @@
   <metadata name="t100.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>592, 17</value>
   </metadata>
+  <data name="&gt;&gt;lL.Name" xml:space="preserve">
+    <value>lL</value>
+  </data>
+  <data name="&gt;&gt;lL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lL.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;lL.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn2.Name" xml:space="preserve">
+    <value>Reg_btn2</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn2.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn1.Name" xml:space="preserve">
+    <value>Reg_btn1</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn1.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;Reg_btn1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tPhone.Name" xml:space="preserve">
+    <value>tPhone</value>
+  </data>
+  <data name="&gt;&gt;tPhone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tPhone.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;tPhone.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tPatronymic.Name" xml:space="preserve">
+    <value>tPatronymic</value>
+  </data>
+  <data name="&gt;&gt;tPatronymic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tPatronymic.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;tPatronymic.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox15.Name" xml:space="preserve">
+    <value>pictureBox15</value>
+  </data>
+  <data name="&gt;&gt;pictureBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox15.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox10.Name" xml:space="preserve">
+    <value>pictureBox10</value>
+  </data>
+  <data name="&gt;&gt;pictureBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox10.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox10.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;warningAll.Name" xml:space="preserve">
+    <value>warningAll</value>
+  </data>
+  <data name="&gt;&gt;warningAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningAll.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningAll.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.Name" xml:space="preserve">
+    <value>warningPhone</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.Name" xml:space="preserve">
+    <value>warningPassword</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.Name" xml:space="preserve">
+    <value>warningPatronymic</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.Name" xml:space="preserve">
+    <value>warningLogin</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.Name" xml:space="preserve">
+    <value>warningSurname</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;warningName.Name" xml:space="preserve">
+    <value>warningName</value>
+  </data>
+  <data name="&gt;&gt;warningName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningName.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningName.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;pL2.Name" xml:space="preserve">
+    <value>pL2</value>
+  </data>
+  <data name="&gt;&gt;pL2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pL2.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pL2.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;pL1.Name" xml:space="preserve">
+    <value>pL1</value>
+  </data>
+  <data name="&gt;&gt;pL1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pL1.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pL1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tPassword.Name" xml:space="preserve">
+    <value>tPassword</value>
+  </data>
+  <data name="&gt;&gt;tPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tPassword.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;tPassword.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;tSurname.Name" xml:space="preserve">
+    <value>tSurname</value>
+  </data>
+  <data name="&gt;&gt;tSurname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tSurname.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;tSurname.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;tLogin.Name" xml:space="preserve">
+    <value>tLogin</value>
+  </data>
+  <data name="&gt;&gt;tLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tLogin.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;tLogin.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;pictureBox12.Name" xml:space="preserve">
+    <value>pictureBox12</value>
+  </data>
+  <data name="&gt;&gt;pictureBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox12.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox12.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tName.Name" xml:space="preserve">
+    <value>tName</value>
+  </data>
+  <data name="&gt;&gt;tName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tName.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;tName.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pictureBox11.Name" xml:space="preserve">
+    <value>pictureBox11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox11.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox11.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
+    <value>pictureBox6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="pRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 20</value>
+  </data>
+  <data name="pRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1030, 522</value>
+  </data>
+  <data name="pRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pRegister.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pRegister.Name" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;pRegister.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pRegister.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pRegister.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="lL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2984,7 +3584,7 @@
     <value>NoControl</value>
   </data>
   <data name="lL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>825, 384</value>
+    <value>825, 377</value>
   </data>
   <data name="lL.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 18</value>
@@ -3049,7 +3649,7 @@
     <value>NoControl</value>
   </data>
   <data name="Reg_btn2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 392</value>
+    <value>453, 392</value>
   </data>
   <data name="Reg_btn2.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 65</value>
@@ -3107,7 +3707,7 @@
     <value>NoControl</value>
   </data>
   <data name="Reg_btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 392</value>
+    <value>453, 392</value>
   </data>
   <data name="Reg_btn1.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 65</value>
@@ -3140,7 +3740,7 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>576, 327</value>
+    <value>576, 320</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 16</value>
@@ -3173,7 +3773,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 327</value>
+    <value>140, 320</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 16</value>
@@ -3200,7 +3800,7 @@
     <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="tPhone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 333</value>
+    <value>572, 326</value>
   </data>
   <data name="tPhone.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 33</value>
@@ -3227,7 +3827,7 @@
     <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="tPatronymic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 333</value>
+    <value>136, 326</value>
   </data>
   <data name="tPatronymic.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 33</value>
@@ -3280,7 +3880,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 316</value>
+    <value>556, 309</value>
   </data>
   <data name="pictureBox15.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 65</value>
@@ -3330,7 +3930,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 316</value>
+    <value>120, 309</value>
   </data>
   <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 65</value>
@@ -3360,7 +3960,7 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>576, 244</value>
+    <value>576, 237</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
@@ -3393,7 +3993,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 247</value>
+    <value>143, 240</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 16</value>
@@ -3426,7 +4026,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>576, 160</value>
+    <value>576, 153</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 16</value>
@@ -3449,6 +4049,258 @@
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="warningAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 488</value>
+  </data>
+  <data name="warningAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 16</value>
+  </data>
+  <data name="warningAll.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningAll.Text" xml:space="preserve">
+    <value>Поля не должны содержать пробелов и знаков ("_ - = + ) ( &amp; * ^ % $ # @ ' " ; : № , . ? ! \ | / ` ~")</value>
+  </data>
+  <data name="warningAll.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningAll.Name" xml:space="preserve">
+    <value>warningAll</value>
+  </data>
+  <data name="&gt;&gt;warningAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningAll.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningAll.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="warningPhone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningPhone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningPhone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 373</value>
+  </data>
+  <data name="warningPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="warningPhone.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningPhone.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле </value>
+  </data>
+  <data name="warningPhone.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.Name" xml:space="preserve">
+    <value>warningPhone</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningPhone.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="warningPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 290</value>
+  </data>
+  <data name="warningPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="warningPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningPassword.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле </value>
+  </data>
+  <data name="warningPassword.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.Name" xml:space="preserve">
+    <value>warningPassword</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningPassword.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="warningPatronymic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningPatronymic.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningPatronymic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningPatronymic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 373</value>
+  </data>
+  <data name="warningPatronymic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="warningPatronymic.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningPatronymic.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле </value>
+  </data>
+  <data name="warningPatronymic.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.Name" xml:space="preserve">
+    <value>warningPatronymic</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningPatronymic.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="warningLogin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 208</value>
+  </data>
+  <data name="warningLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="warningLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningLogin.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле </value>
+  </data>
+  <data name="warningLogin.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.Name" xml:space="preserve">
+    <value>warningLogin</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningLogin.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="warningSurname.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningSurname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningSurname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningSurname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 290</value>
+  </data>
+  <data name="warningSurname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="warningSurname.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningSurname.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле </value>
+  </data>
+  <data name="warningSurname.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.Name" xml:space="preserve">
+    <value>warningSurname</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningSurname.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="warningName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warningName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 8.25pt, style=Bold</value>
+  </data>
+  <data name="warningName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warningName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 208</value>
+  </data>
+  <data name="warningName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 16</value>
+  </data>
+  <data name="warningName.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="warningName.Text" xml:space="preserve">
+    <value>Некорректно заполненное поле </value>
+  </data>
+  <data name="warningName.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warningName.Name" xml:space="preserve">
+    <value>warningName</value>
+  </data>
+  <data name="&gt;&gt;warningName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warningName.Parent" xml:space="preserve">
+    <value>pRegister</value>
+  </data>
+  <data name="&gt;&gt;warningName.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3459,7 +4311,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 160</value>
+    <value>140, 153</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 16</value>
@@ -3480,7 +4332,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>19</value>
   </data>
   <data name="pL2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3624,7 +4476,7 @@
     <value>NoControl</value>
   </data>
   <data name="pL2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>893, 244</value>
+    <value>893, 237</value>
   </data>
   <data name="pL2.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 43</value>
@@ -3648,7 +4500,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pL2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>20</value>
   </data>
   <data name="pL1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3790,7 +4642,7 @@
     <value>NoControl</value>
   </data>
   <data name="pL1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>893, 244</value>
+    <value>893, 237</value>
   </data>
   <data name="pL1.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 43</value>
@@ -3811,13 +4663,13 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pL1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>21</value>
   </data>
   <data name="tPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="tPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 247</value>
+    <value>572, 240</value>
   </data>
   <data name="tPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
@@ -3841,16 +4693,13 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;tPassword.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>22</value>
   </data>
   <data name="tSurname.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="tSurname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 247</value>
-  </data>
-  <data name="tSurname.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+    <value>136, 240</value>
   </data>
   <data name="tSurname.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 33</value>
@@ -3871,13 +4720,13 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;tSurname.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>23</value>
   </data>
   <data name="tLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="tLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 166</value>
+    <value>572, 159</value>
   </data>
   <data name="tLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 33</value>
@@ -3898,7 +4747,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;tLogin.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="pictureBox12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3930,7 +4779,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 232</value>
+    <value>556, 225</value>
   </data>
   <data name="pictureBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 65</value>
@@ -3948,13 +4797,13 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pictureBox12.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>25</value>
   </data>
   <data name="tName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
   </data>
   <data name="tName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 166</value>
+    <value>136, 159</value>
   </data>
   <data name="tName.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 33</value>
@@ -3975,7 +4824,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;tName.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>26</value>
   </data>
   <data name="pictureBox11.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4007,7 +4856,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 149</value>
+    <value>556, 142</value>
   </data>
   <data name="pictureBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 65</value>
@@ -4025,7 +4874,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pictureBox11.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>27</value>
   </data>
   <data name="pictureBox5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4057,7 +4906,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 232</value>
+    <value>120, 225</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 65</value>
@@ -4075,7 +4924,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>28</value>
   </data>
   <data name="pictureBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4107,7 +4956,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 149</value>
+    <value>120, 142</value>
   </data>
   <data name="pictureBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 65</value>
@@ -4125,7 +4974,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>29</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4158,7 +5007,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>30</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4264,31 +5113,7 @@
     <value>pRegister</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="pRegister.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 20</value>
-  </data>
-  <data name="pRegister.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1030, 522</value>
-  </data>
-  <data name="pRegister.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="pRegister.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pRegister.Name" xml:space="preserve">
-    <value>pRegister</value>
-  </data>
-  <data name="&gt;&gt;pRegister.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pRegister.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pRegister.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>31</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

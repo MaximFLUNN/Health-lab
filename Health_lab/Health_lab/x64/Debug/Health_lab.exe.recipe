@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\x64\Debug\Health_lab.exe</FullPath>
+      <FullPath>C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\x64\Debug\Health_lab.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
   <SatelliteDlls>
     <SatelliteDll>
-      <FullPath>D:\Project_station_v3\Project station v2\Сompleted_tasks\Health_lab\Health_lab\x64\Debug\ja-JP\Health_lab.resources.dll</FullPath>
+      <FullPath>C:\Users\77777\OneDrive\Рабочий стол\Health-lab-main\Health_lab\Health_lab\x64\Debug\ja-JP\Health_lab.resources.dll</FullPath>
     </SatelliteDll>
   </SatelliteDlls>
   <NonRecipeFileRefs />
